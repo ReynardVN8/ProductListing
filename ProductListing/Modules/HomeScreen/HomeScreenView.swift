@@ -8,12 +8,21 @@
 import SwiftUI
 
 struct HomeScreenView: View {
+    @ObservedObject var homeScreenVM = HomeScreenViewModel()
+    
+    init(){
+        homeScreenVM.getCategories()
+    }
+    
     var body: some View {
         NavigationStack {
             VStack {
                 List {
-                    ForEach(0..<20) {_ in
-                        ListItem(id: "", titleText: "", descText: "")
+                    ForEach(
+                        homeScreenVM.setCategories()
+                    ) { category in
+                        ListItem(id: category.id, titleText: category.name)
+                            .offset(y: 10)
                     }
                 }
             }

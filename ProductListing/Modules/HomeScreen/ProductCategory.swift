@@ -6,17 +6,16 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-struct ProductCategory {
+struct ProductCategory: Identifiable {
     let id: String
-    var name: String?
-    var quantity: Int?
+    var name: String
     var products = [ItemDetail]()
     
-    init(id: String, name: String? = nil, quantity: Int? = nil, products: [ItemDetail] = [ItemDetail]()) {
-        self.id = id
-        self.name = name
-        self.quantity = quantity
-        self.products = products
+    init(_ json: JSON) {
+        self.id = json["id"].stringValue
+        self.name = json["name"].stringValue
+        self.products = json["products"].arrayValue.map{ ItemDetail($0) }
     }
 }

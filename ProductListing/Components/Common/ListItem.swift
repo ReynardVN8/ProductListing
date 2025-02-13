@@ -10,7 +10,7 @@ import SwiftUI
 struct ListItem: View {
     var id: String
     var titleText: String
-    var descText: String
+    var descText: String = ""
     var priceText: String = ""
     var qtyText: String = ""
     
@@ -19,19 +19,19 @@ struct ListItem: View {
             HStack(alignment: .top){
                 Text(titleText)
                 Spacer()
-                if !qtyText.isEmpty{
-                    Text(qtyText)
-                }
+                Text(qtyText)
+                    .hidden(qtyText.isEmpty)
             }
             Spacer()
                 .frame(height: 5)
+                .hidden(descText.isEmpty && priceText.isEmpty)
             HStack(alignment: .top){
                 Text(descText)
+                    .hidden(descText.isEmpty)
                 Spacer()
-                if !priceText.isEmpty{
-                    Text(priceText)
-                }
+                Text(priceText).hidden(priceText.isEmpty)
             }
+                .hidden(descText.isEmpty && priceText.isEmpty)
         }
         .padding(20)
         .cornerRadius(8)
@@ -40,5 +40,5 @@ struct ListItem: View {
 }
 
 #Preview {
-    ListItem(id: "1", titleText: "title", descText: "desc")
+    ListItem(id: "1", titleText: "title", descText: "desc", priceText: "price", qtyText: "quantites")
 }
