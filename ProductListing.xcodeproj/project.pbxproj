@@ -195,6 +195,9 @@
 			);
 			mainGroup = 939070FE2D5DDBDD004541BE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				93450A4F2D5DEC2D00C32EA1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 939071082D5DDBDD004541BE /* Products */;
 			projectDirPath = "";
@@ -395,7 +398,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ProductListing/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ProductListing/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = VCS35KH4W8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +427,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ProductListing/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ProductListing/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = VCS35KH4W8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -558,6 +561,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93450A4F2D5DEC2D00C32EA1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 939070FF2D5DDBDD004541BE /* Project object */;
 }
