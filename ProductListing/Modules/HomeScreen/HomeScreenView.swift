@@ -21,8 +21,12 @@ struct HomeScreenView: View {
                     ForEach(
                         homeScreenVM.setCategories()
                     ) { category in
-                        ListItem(id: category.id, titleText: category.name)
-                            .offset(y: 10)
+                        NavigationLink {
+                            ProductListView(categoryID: category.id, categoryName: category.name)
+                        } label: {
+                            ListItem(titleText: category.name)
+                                .offset(y: 10)
+                        }
                     }
                 }
             }

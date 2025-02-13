@@ -28,9 +28,16 @@
       {
         "id": "electro4",
         "name": "CPU",
-        "price": 99.99,
+        "price": 399.99,
         "description": "High Power Processor",
-        "quantity": 1
+        "quantity": 0
+      },
+      {
+        "id": "electro4",
+        "name": "GPU",
+        "price": 1599.99,
+        "description": "High Power graphic processor",
+        "quantity": 15
       }
     ]
   },
@@ -107,7 +114,7 @@
         "name": "Fantasy novel",
         "price": 29.99,
         "description": "Recommended novel filled with magic and wonders",
-        "quantity": 20
+        "quantity": 0
       },
       {
         "id": "books2",

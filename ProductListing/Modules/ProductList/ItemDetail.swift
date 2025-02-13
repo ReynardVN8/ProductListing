@@ -8,18 +8,18 @@
 import Foundation
 import SwiftyJSON
 
-struct ItemDetail {
+struct ItemDetail: Identifiable {
     let id: String
-    var name: String?
-    var price: Double?
+    var name: String
+    var price: Double
     var description: String?
-    var quantity: Int?
+    var quantity: Int
     
     init(_ json: JSON) {
         self.id = json["id"].stringValue
-        self.name = json["name"].string
-        self.price = json["price"].double
+        self.name = json["name"].stringValue
+        self.price = json["price"].doubleValue
         self.description = json["description"].string
-        self.quantity = json["quantity"].int
+        self.quantity = json["quantity"].intValue
     }
 }

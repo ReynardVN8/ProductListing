@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ListItem: View {
-    var id: String
     var titleText: String
     var descText: String = ""
     var priceText: String = ""
@@ -18,8 +17,10 @@ struct ListItem: View {
         VStack(alignment: .leading){
             HStack(alignment: .top){
                 Text(titleText)
+                    .font(.system(size: 16, weight: .semibold))
                 Spacer()
                 Text(qtyText)
+                    .font(.system(size: 12, weight: .regular))
                     .hidden(qtyText.isEmpty)
             }
             Spacer()
@@ -27,9 +28,12 @@ struct ListItem: View {
                 .hidden(descText.isEmpty && priceText.isEmpty)
             HStack(alignment: .top){
                 Text(descText)
+                    .font(.system(size: 12, weight: .regular))
                     .hidden(descText.isEmpty)
                 Spacer()
-                Text(priceText).hidden(priceText.isEmpty)
+                Text(priceText)
+                    .font(.system(size: 12, weight: .regular))
+                    .hidden(priceText.isEmpty)
             }
                 .hidden(descText.isEmpty && priceText.isEmpty)
         }
@@ -40,5 +44,5 @@ struct ListItem: View {
 }
 
 #Preview {
-    ListItem(id: "1", titleText: "title", descText: "desc", priceText: "price", qtyText: "quantites")
+    ListItem(titleText: "title", descText: "desc", priceText: "price", qtyText: "quantites")
 }
