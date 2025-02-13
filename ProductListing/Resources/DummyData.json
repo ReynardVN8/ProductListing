@@ -1,0 +1,128 @@
+[
+  {
+    "id": "category1",
+    "name": "Electronics",
+    "quantity": 3,
+    "products": [
+      {
+        "id": "electro1",
+        "name": "Laptop",
+        "price": 999.99,
+        "description": "High-end gaming laptop",
+        "quantity": 5
+      },
+      {
+        "id": "electro2",
+        "name": "Mouse",
+        "price": 49.99,
+        "description": "Wireless ergonomic mouse",
+        "quantity": 10
+      },
+      {
+        "id": "electro3",
+        "name": "monitor",
+        "price": 24.99,
+        "description": "Low budget display",
+        "quantity": 7
+      },
+      {
+        "id": "electro4",
+        "name": "CPU",
+        "price": 399.99,
+        "description": "High Power Processor",
+        "quantity": 0
+      },
+      {
+        "id": "electro5",
+        "name": "GPU",
+        "price": 1599.99,
+        "description": "High Power graphic processor",
+        "quantity": 15
+      }
+    ]
+  },
+  {
+    "id": "category2",
+    "name": "Furniture",
+    "quantity": 2,
+    "products": [
+      {
+        "id": "furniture1",
+        "name": "Office Chair",
+        "price": 199.99,
+        "description": "Ergonomic office chair with lumbar support",
+        "quantity": 7
+      },
+      {
+        "id": "furniture2",
+        "name": "Standing Desk",
+        "price": 499.99,
+        "description": "Adjustable standing desk",
+        "quantity": 4
+      }
+    ]
+  },
+  {
+    "id": "category3",
+    "name": "Clothing",
+    "quantity": 5,
+    "products": [
+      {
+        "id": "clothing1",
+        "name": "T-Shirt",
+        "price": 19.99,
+        "description": "Cotton t-shirt with custom print",
+        "quantity": 20
+      },
+      {
+        "id": "clothing2",
+        "name": "Jeans",
+        "price": 49.99,
+        "description": "Slim fit blue jeans",
+        "quantity": 15
+      },
+      {
+        "id": "clothing3",
+        "name": "Skirt",
+        "price": 23.99,
+        "description": "Elegant skirt fit for the ladies",
+        "quantity": 23
+      }
+    ]
+  },
+  {
+    "id": "category4",
+    "name": "Books",
+    "quantity": 4,
+    "products": [
+      {
+        "id": "books1",
+        "name": "Fiction Novel",
+        "price": 14.99,
+        "description": "Bestselling mystery novel",
+        "quantity": 12
+      },
+      {
+        "id": "books2",
+        "name": "Self-Help Book",
+        "price": 24.99,
+        "description": "Personal development and success strategies",
+        "quantity": 10
+      },
+      {
+        "id": "books3",
+        "name": "Fantasy novel",
+        "price": 29.99,
+        "description": "Recommended novel filled with magic and wonders",
+        "quantity": 0
+      },
+      {
+        "id": "books4",
+        "name": "Action Comic Book",
+        "price": 89.99,
+        "description": "Limited edition of legendary hero comic book",
+        "quantity": 4
+      }
+    ]
+  }
+]

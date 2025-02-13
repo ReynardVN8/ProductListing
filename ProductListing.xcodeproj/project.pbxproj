@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		93450A5C2D5DFD6100C32EA1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 93450A5B2D5DFD6100C32EA1 /* SwiftyJSON */; };
+		93450A5E2D5DFD8900C32EA1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 93450A5D2D5DFD8900C32EA1 /* SwiftyJSON */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		939071182D5DDBE0004541BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93450A5C2D5DFD6100C32EA1 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93450A5E2D5DFD8900C32EA1 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,7 @@
 			);
 			name = ProductListing;
 			packageProductDependencies = (
+				93450A5B2D5DFD6100C32EA1 /* SwiftyJSON */,
 			);
 			productName = ProductListing;
 			productReference = 939071072D5DDBDD004541BE /* ProductListing.app */;
@@ -135,6 +143,7 @@
 			);
 			name = ProductListingTests;
 			packageProductDependencies = (
+				93450A5D2D5DFD8900C32EA1 /* SwiftyJSON */,
 			);
 			productName = ProductListingTests;
 			productReference = 939071172D5DDBE0004541BE /* ProductListingTests.xctest */;
@@ -195,6 +204,9 @@
 			);
 			mainGroup = 939070FE2D5DDBDD004541BE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				93450A4F2D5DEC2D00C32EA1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 939071082D5DDBDD004541BE /* Products */;
 			projectDirPath = "";
@@ -395,7 +407,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ProductListing/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ProductListing/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = VCS35KH4W8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -424,7 +436,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ProductListing/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ProductListing/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = VCS35KH4W8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -558,6 +570,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		93450A4F2D5DEC2D00C32EA1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		93450A5B2D5DFD6100C32EA1 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93450A4F2D5DEC2D00C32EA1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		93450A5D2D5DFD8900C32EA1 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 93450A4F2D5DEC2D00C32EA1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 939070FF2D5DDBDD004541BE /* Project object */;
 }
