@@ -11,7 +11,7 @@ struct ListItem: View {
     var titleText: String
     var descText: String = ""
     var priceText: String = ""
-    var qtyText: String = ""
+    var qtyText: AttributedString = AttributedString("")
     
     var body: some View {
         VStack(alignment: .leading){
@@ -21,7 +21,7 @@ struct ListItem: View {
                 Spacer()
                 Text(qtyText)
                     .font(.system(size: 12, weight: .regular))
-                    .hidden(qtyText.isEmpty)
+                    .hidden(qtyText.description.isEmpty)
             }
             Spacer()
                 .frame(height: 5)

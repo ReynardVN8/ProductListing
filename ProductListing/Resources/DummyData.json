@@ -33,7 +33,7 @@
         "quantity": 0
       },
       {
-        "id": "electro4",
+        "id": "electro5",
         "name": "GPU",
         "price": 1599.99,
         "description": "High Power graphic processor",
@@ -110,14 +110,14 @@
         "quantity": 10
       },
       {
-        "id": "books2",
+        "id": "books3",
         "name": "Fantasy novel",
         "price": 29.99,
         "description": "Recommended novel filled with magic and wonders",
         "quantity": 0
       },
       {
-        "id": "books2",
+        "id": "books4",
         "name": "Action Comic Book",
         "price": 89.99,
         "description": "Limited edition of legendary hero comic book",

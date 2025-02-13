@@ -37,4 +37,10 @@ class ProductListViewModel: ObservableObject {
         }
         return []
     }
+    
+    func setQtyAttributedString(_ quantity: Int) -> AttributedString{
+        var coloredQty = AttributedString("\(quantity)")
+        coloredQty.foregroundColor = quantity > 0 ? .green : .red
+        return "Qty: " + coloredQty
+    }
 }

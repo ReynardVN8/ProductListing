@@ -25,7 +25,7 @@ struct ProductListView: View {
                     ListItem(titleText: item.name,
                              descText: "\(item.description ?? "")",
                              priceText: "Price: \(item.price)$",
-                             qtyText: "Qty: \(item.quantity)")
+                             qtyText: productListVM.setQtyAttributedString(item.quantity))
                 }
             }
         }
